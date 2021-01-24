@@ -35,9 +35,9 @@ debian9换源
 deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib  
 deb-src http://mirrors.aliyun.com/debian/ stretch main non-free contrib  
 deb http://mirrors.aliyun.com/debian-security stretch/updates main  
-deb-src http://mirrors.aliyun.com/debian-security stretch/updates main  
-deb http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib  
-deb-src http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib  
+deb-src http://mirrors.aliyun.com/debian-security stretch/updates main    
+deb http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib    
+deb-src http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib    
 deb http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib  
 deb-src http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib  
 " > /etc/apt/sources.list `  
@@ -65,7 +65,7 @@ ubuntu18.04换源
 
 `mv /etc/apt/sources.list /etc/apt/sources.list.backup`
 
-`echo "
+`echo "  
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
 deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
