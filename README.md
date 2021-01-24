@@ -32,14 +32,23 @@ debian9换源
 `mv /etc/apt/sources.list /etc/apt/sources.list.backup`
 
 `echo "  
+
 deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib  
+
 deb-src http://mirrors.aliyun.com/debian/ stretch main non-free contrib  
+
 deb http://mirrors.aliyun.com/debian-security stretch/updates main  
+
 deb-src http://mirrors.aliyun.com/debian-security stretch/updates main    
-deb http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib    
+
+deb http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib   
+
 deb-src http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib    
-deb http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib  
+
+deb http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib 
+
 deb-src http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib  
+
 " > /etc/apt/sources.list `  
 
 `chmod 644 /etc/apt/sources.list`
@@ -50,13 +59,21 @@ debian10换源
 
 `echo "  
 deb http://mirrors.aliyun.com/debian/ buster main non-free contrib  
+
 deb-src http://mirrors.aliyun.com/debian/ buster main non-free contrib  
+
 deb http://mirrors.aliyun.com/debian-security buster/updates main  
+
 deb-src http://mirrors.aliyun.com/debian-security buster/updates main  
-deb http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib  
+
+deb http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib 
+
 deb-src http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib  
+
 deb http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib  
+
 deb-src http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib  
+
 " > /etc/apt/sources.list `  
 
 `chmod 644 /etc/apt/sources.list`
@@ -67,15 +84,25 @@ ubuntu18.04换源
 
 `echo "  
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+
 " > /etc/apt/sources.list `  
 
 `chmod 644 /etc/apt/sources.list	`	
@@ -86,15 +113,25 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted univer
 
 `echo "  
 deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse  
+
 deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse  
+
+deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+
 deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse  
+
 deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse  
+
 deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse  
+
+deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse 
+
 deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse  
+
 deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse  
+
 deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse  
+
 " > /etc/apt/sources.list `  
 
 `chmod 644 /etc/apt/sources.list	`
