@@ -1,7 +1,7 @@
 # back-to-China
 wulabing v2ray回国(内地)搭建 使用请遵守中国内地法律
 
-原理是先将证书上传到证书目录 触发安装时脚本对证书的判断bug 让脚本认为已经有证书了 可以选择跳过申请证书 从而可以让不能申请证书的VPS能够使用wulabing的脚本v2ray
+原理是先将证书上传到证书目录 触发安装时脚本对证书的判断bug 让脚本认为已经有证书了 可以选择跳过申请证书 从而可以让不能申请证书的VPS能够使用wulabing的脚本安装v2ray
 
 用finalshell在境外VPS上用 https://github.com/cchhuuaann1/httpproxy 脚本安装http代理 跑一遍wulabing的脚本 然后进入 /data/ 目录 (`cd /data/`) 把那两个v2ray证书下载下来(右击 下载) 在桌面上会有一个文件夹"fsdownload"在那里面 然后SSH登录境内VPS(NAT和独立IP都可以)创建 /data/ 目录 (`mkdir /data/ && cd /data/`) 把那两个v2ray证书上传到 /data/ 去(从fsdownload拖到finalshell下面的文件区） 给内地VPS挂http代理( `export http_proxy=http://ip:port export https_proxy=http://ip:port`) 接着在境内VPS上再跑一边跑wulabing的脚本 域名那里直接填当前IP回车 输入yes继续安装 端口那块NAT的VPS填一个你可以使用的端口 独立IP的除了80/443以外的其他任意一个端口 后面脚本会问你证书已存在 是否删除证书 这里是选否的 跑完脚本后取消掉http代理 `unset http_proxy unset https_proxy` 
 
